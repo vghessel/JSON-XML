@@ -1,0 +1,1 @@
+O scrip pega a informação, consumindo uma API, no formato JSON e o transforma em XML.

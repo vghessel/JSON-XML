@@ -1,0 +1,27 @@
+<root>
+  <cep>
+    <cep>04139-000</cep>
+    <logradouro>Rua Page&#250;</logradouro>
+    <complemento />
+    <bairro>Vila Mariana</bairro>
+    <localidade>S&#227;o Paulo</localidade>
+    <uf>SP</uf>
+    <ibge>3550308</ibge>
+    <gia>1004</gia>
+    <ddd>11</ddd>
+    <siafi>7107</siafi>
+  </cep>
+  <cep cep="04139-000" logradouro="Rua Page&#250;" complemento="" bairro="Vila Mariana" localidade="S&#227;o Paulo" uf="SP" ibge="3550308" gia="1004" ddd="11" siafi="7107" />
+  <cep cep="04139-000" logradouro="Rua Page&#250;" complemento="" bairro="Vila Mariana" localidade="S&#227;o Paulo" uf="SP" ibge="3550308" gia="1004" ddd="11" siafi="7107">
+    <cep>04139-000</cep>
+    <logradouro>Rua Page&#250;</logradouro>
+    <complemento />
+    <bairro>Vila Mariana</bairro>
+    <localidade>S&#227;o Paulo</localidade>
+    <uf>SP</uf>
+    <ibge>3550308</ibge>
+    <gia>1004</gia>
+    <ddd>11</ddd>
+    <siafi>7107</siafi>
+  </cep>
+</root>

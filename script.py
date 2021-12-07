@@ -8,20 +8,21 @@ for cep in ceps:
     cep_body = request.json()
     retorno.append(cep_body)
 
+root = ET.Element("root")
 
 for data in retorno:
-    root = ET.Element("root")
+    info = ET.SubElement(root, "cep")
+    ET.SubElement(info, "cep").text = data["cep"]
+    ET.SubElement(info, "logradouro").text = data["logradouro"]
+    ET.SubElement(info, "complemento").text = data["complemento"]
+    ET.SubElement(info, "bairro").text = data["bairro"]
+    ET.SubElement(info, "localidade").text = data["localidade"]
+    ET.SubElement(info, "uf").text = data["uf"]
+    ET.SubElement(info, "ibge").text = data["ibge"]
+    ET.SubElement(info, "gia").text = data["gia"]
+    ET.SubElement(info, "ddd").text = data["ddd"]
+    ET.SubElement(info, "siafi").text = data["siafi"]
 
-    ET.SubElement(root, "cep").text = data["cep"]
-    ET.SubElement(root, "logradouro").text = data["logradouro"]
-    ET.SubElement(root, "complemento").text = data["complemento"]
-    ET.SubElement(root, "bairro").text = data["bairro"]
-    ET.SubElement(root, "localidade").text = data["localidade"]
-    ET.SubElement(root, "uf").text = data["uf"]
-    ET.SubElement(root, "ibge").text = data["ibge"]
-    ET.SubElement(root, "gia").text = data["gia"]
-    ET.SubElement(root, "ddd").text = data["ddd"]
-    ET.SubElement(root, "siafi").text = data["siafi"]
 
 tree = ET.ElementTree(root)
 tree.write("CEP.xml")

@@ -1,1 +1,1 @@
-O scrip pega a informação, consumindo uma API, no formato JSON e o transforma em XML.
+The script takes the information consuming an API, in JSON format, and transforms it into XML.
